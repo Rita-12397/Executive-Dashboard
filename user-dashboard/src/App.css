@@ -1,0 +1,105 @@
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    color: rgb(122, 123, 126) ;
+}
+.main1-div {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
+    }
+.main-div {
+background-color: rgb(245, 246, 248);
+margin-left: 5%;
+height: 650px;
+/* margin-right: 5%; */
+
+}
+.main-header{
+    display: flex;
+    flex-direction: row;
+}
+.sub-header{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    color: rgb(124, 119, 119);
+}
+h4{
+    color: indigo;
+    margin-left: 10%;
+}
+.exec-dash{
+    border: 1px solid #e4e6e7;
+    width: 200px;
+    margin-left: 2%;
+    padding-left: 2%;
+    background-color: white;
+    color: rgb(124, 119, 119);
+    padding-top: 2.5%;
+
+}
+.select{
+    padding-top: 2.5%;
+}
+
+td, th {
+    padding-left: 200px;
+    margin-left: 25px;
+    color:rgb(151, 174, 190) ;
+    font-weight: bold;
+
+
+  }
+.div-data{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 70px;
+    width: 1000px;
+    margin-left: 7%;
+    margin-top: 0.4%;
+}
+.sub-div{
+    margin-left: 2%;
+}
+.button{
+    margin-left: 2%;
+    width: 90px;
+    height: 30px;
+    margin-top: 2%;
+    color: rgb(124, 119, 119);
+    border: 2px solid #e4e6e7;
+
+
+}
+.username{
+    margin-top: 13%;
+    color: rgb(124, 119, 119);
+    font-weight: bold;
+}
+.email{
+    margin-top: -12%;
+    color: rgb(124, 119, 119);
+
+
+}
+.p1{
+    margin-left: 13%;
+    margin-top: 2%;
+    color: rgb(124, 119, 119);
+}
+.p2{
+    margin-left: 19.5%;
+    color: rgb(124, 119, 119);
+
+}
+.p3{
+    margin-left: 19%;
+    margin-top: 2%;
+    color: rgb(124, 119, 119);
+}
