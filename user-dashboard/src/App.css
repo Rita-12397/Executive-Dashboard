@@ -1,0 +1,130 @@
+.main-div1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+.main-div {
+background-color: rgb(234, 238, 248);
+
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 6%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 1.5%;
+    color: rgb(122, 123, 126) ;
+    background-color: rgba(255, 255, 255, 0.932);
+    width: 40px;
+
+} 
+.main-header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sub-header{
+    display: flex;
+    flex-direction: row;
+    color: rgb(124, 119, 119);
+}
+h4{
+    color: indigo;
+
+}
+.exec-dash{
+    border: 1px solid #e4e6e7;
+    width: 200px;
+    padding-left: 4%;
+    background-color: white;
+    color: rgb(124, 119, 119);
+}
+.headericons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    color: indigo;
+}
+.select{
+    padding-top: 1%;
+    margin-top: 3%;
+    margin-left: 30%;
+
+}
+
+td, th {
+    padding-left: 100px;
+    margin-left: 25px;
+    color:rgb(151, 174, 190) ;
+    font-weight: bold;
+
+  } 
+.div-data{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 70px;
+    width: 1000px;
+    margin-left: 7%;
+    margin-top: 0.4%;
+}
+.sub-div{
+    margin-left: 2%;
+}
+.button{
+    margin-left: 2%;
+    width: 90px;
+    height: 30px;
+    margin-top: 2%;
+    color: rgb(124, 119, 119);
+    border: 2px solid #e4e6e7;
+}
+button:hover{
+    background-color: rgb(185, 197, 230);
+}
+.username{
+    margin-top: 13%;
+    color: rgb(124, 119, 119);
+    font-weight: bold;
+}
+.email{
+    font-weight: bold;
+    color: rgb(124, 119, 119);
+
+}
+.p1{
+   
+    color: rgb(124, 119, 119);
+}
+.p11{
+    color: rgb(124, 119, 119);
+
+}
+.site{
+    color: rgb(124, 119, 119);
+    margin-top: -6%;
+}
+.dicon{
+    display: flex;
+    flex-direction: row;
+    margin-left: 17%;
+
+}
+.p2{
+    color: rgb(124, 119, 119);
+    margin-top: 14%;
+
+
+}
+.p2icon{
+    color: rgb(124, 119, 119) 
+}
+.p3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 19%;
+    margin-top: 2%;
+    color: rgb(124, 119, 119);
+}
