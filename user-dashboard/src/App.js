@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from "react";
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -9,11 +9,12 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import {returnedData} from './returnedData';
 import Header from './Header';
-
 import HomeIcon from '@material-ui/icons/Home';
 import PostAddIcon from '@material-ui/icons/PostAdd';
 import SaveIcon from '@material-ui/icons/Save';
 import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
+import {connect} from 'react-redux';
+import {getAllUsers,getAllUsersSuccess,getAllUsersError} from './redux/action/userAction';
 
 
 const StyledTableCell = withStyles((theme) => ({
@@ -36,9 +37,15 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CustomizedTables() {
-  const classes = useStyles();
+export default class executiveDashboard extends Component {
+  componentDidMount(){
+  const {getAllUsers} =  this.props;
+  getAllUsers();
+}
 
+  render() {
+  const classes = useStyles();
+  const { classes } = this.props;
   return (
     <div className='main-div1'>
       <div className="icons">
@@ -69,14 +76,14 @@ export default function CustomizedTables() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {returnedData.map((row) => (
-            <StyledTableRow key={row.id}>
+        {this.props.usersData &&this.props.usersData.map((row, index) => (
+            <StyledTableRow key={row.uuid}>
               <StyledTableCell component="th" scope="row">
                 {row.button}
               </StyledTableCell>
               <StyledTableCell align="right">{row.email}<span>{row.website}</span></StyledTableCell>
               <StyledTableCell align="right">{row.ip}</StyledTableCell>
-              <StyledTableCell align="right">{row.name}</StyledTableCell>
+              <StyledTableCell align="right">{row.username}</StyledTableCell>
               <StyledTableCell align="right">{row.action}</StyledTableCell>
             </StyledTableRow>
           ))}
@@ -86,4 +93,15 @@ export default function CustomizedTables() {
     </div>
     </div>
   );
+  }
 }
+export const mapStateToProps=(state)=>{
+  return{
+    usersData:state.userReducer.data
+  }
+}
+
+const connectedUserTable = connect(mapStateToProps,{
+  getAllUsers,getAllUsersSuccess,getAllUsersError
+})(withStyles(useStyles)(executiveDashboard))
+export default connectedUserTable;
